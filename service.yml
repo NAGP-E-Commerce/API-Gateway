@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gateway
+  name: gateway1
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: gateway
+    app: gateway1
   type: LoadBalancer

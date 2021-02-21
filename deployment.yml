@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gateway
+  name: gateway1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gateway
+      app: gateway1
   template:
     metadata:
       labels:
-        app: gateway
+        app: gateway1
     spec:
       containers:
       - name: product
-        image: gcr.io/oceanic-craft-302516/gateway:latest
+        image: gcr.io/oceanic-craft-302516/gateway1:latest
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
