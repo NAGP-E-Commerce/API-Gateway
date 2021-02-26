@@ -16,8 +16,8 @@ steps:
    'set', 
    'image', 
    'deployment', 
-   'app', 
-   'app=gcr.io/oceanic-craft-302516/gateway1'
+   'gateway1', 
+   'gateway1=gcr.io/oceanic-craft-302516/gateway1'
   ]
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
